@@ -40,10 +40,10 @@ class Dog
   def self.find_by_name(name)
     sql = <<-SQL
     SELECT id, name, breed FROM dogs
-    WHERE id = ?
+    WHERE name = ?
     SQL
 
-    row = DB[:conn].execute(sql, id).flatten
+    row = DB[:conn].execute(sql, name).flatten
   end
 
   def update
@@ -76,7 +76,7 @@ class Dog
   end
 
   def self.find_or_create_by(name)
-    
+
   end
 
 end
