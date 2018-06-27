@@ -42,7 +42,7 @@ class Dog
   end
 
   def save
-    self
+    if self
   end
 
 end
