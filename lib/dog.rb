@@ -14,4 +14,6 @@ class Dog
   def self.drop_table
   end
 
+  def new_from_db(row)
+
 end
