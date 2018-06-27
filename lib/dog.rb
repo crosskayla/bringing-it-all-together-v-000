@@ -55,7 +55,7 @@ class Dog
     SQL
 
     row = DB[:conn].execute(sql, name, breed, id).flatten
-    self.new_from_db(row)
+    Dog.new_from_db(row)
 
   end
 
