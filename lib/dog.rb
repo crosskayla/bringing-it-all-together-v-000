@@ -81,7 +81,7 @@ class Dog
     WHERE name = ? AND breed = ?
     SQL
 
-    row = DB[:conn].execute(sql, name, breed)
+    row = DB[:conn].execute(sql, name, breed).flatten
 
     if row.empty?
       self.create(name: name, breed: breed)
