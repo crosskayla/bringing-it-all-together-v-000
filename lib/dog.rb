@@ -52,4 +52,7 @@ class Dog
     self
   end
 
+  def create
+  end
+
 end
