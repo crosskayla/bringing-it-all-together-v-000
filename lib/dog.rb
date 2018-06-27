@@ -64,7 +64,7 @@ class Dog
     WHERE id = ?
     SQL
 
-    row = DB[:conn].execute(sql, id)
+    row = DB[:conn].execute(sql, id).flatten
     self.new_from_db(row)
     binding.pry
   end
