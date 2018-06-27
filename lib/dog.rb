@@ -57,7 +57,11 @@ class Dog
     dog.save
   end
 
-  def self.find_by_id
+  def self.find_by_id(id)
+    sql = <<-SQL
+    SELECT name, breed FROM dogs
+    WHERE id = ?
+    SQL
   end
 
 end
