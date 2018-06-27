@@ -60,7 +60,7 @@ class Dog
     self
   end
 
-  def self.create(name:, breed:)
+  def self.create(name:, breed:nil)
     dog = Dog.new(name: name, breed: breed)
     dog.save
   end
@@ -77,6 +77,7 @@ class Dog
 
   def self.find_or_create_by(name)
     if self.find_by_name(name).empty?
+      self.create(name)
   end
 
 end
