@@ -12,7 +12,9 @@ class Dog
 
     sql = <<-SQL
     CREATE TABLE IF NOT EXISTS dogs(
-      
+      id PRIMARY KEY INTEGER,
+      name STRING,
+      breed STRING
     )
     SQL
 
