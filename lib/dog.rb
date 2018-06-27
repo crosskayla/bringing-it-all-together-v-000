@@ -69,7 +69,7 @@ class Dog
     self.new_from_db(row)
   end
 
-  def find_or_create_by
+  def self.find_or_create_by
   end
 
 end
