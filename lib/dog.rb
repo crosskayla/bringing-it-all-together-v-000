@@ -24,6 +24,7 @@ class Dog
   end
 
   def save
+    #insert or update logic
   end
 
 end
