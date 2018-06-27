@@ -42,7 +42,7 @@ class Dog
   end
 
   def save
-    #insert or update logic
+    self
   end
 
 end
