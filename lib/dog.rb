@@ -42,7 +42,11 @@ class Dog
   end
 
   def save
-    if self
+    sql = <<-SQL
+
+    SQL
+
+    DB[:conn].execute(SQL)
   end
 
 end
