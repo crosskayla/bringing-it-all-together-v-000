@@ -84,7 +84,7 @@ class Dog
     row = DB[:conn].execute(sql, name)
 
     if self.row.empty?
-      self.create(name)
+      self.create(name: name)
     else
       self
     end
