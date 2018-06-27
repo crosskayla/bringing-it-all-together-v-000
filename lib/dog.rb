@@ -43,7 +43,7 @@ class Dog
     WHERE name = ?
     SQL
 
-    row = DB[:conn].execute(sql, name).flatten
+    row = DB[:conn].execute(sql, name)
   end
 
   def update
