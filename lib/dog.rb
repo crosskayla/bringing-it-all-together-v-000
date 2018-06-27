@@ -67,7 +67,6 @@ class Dog
 
     row = DB[:conn].execute(sql, id).flatten
     self.new_from_db(row)
-    binding.pry
   end
 
 end
