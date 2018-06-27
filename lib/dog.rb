@@ -17,7 +17,13 @@ class Dog
   def self.new_from_db(row)
   end
 
-  def self.find_by_name
+  def self.find_by_name(name)
+  end
+
+  def update
+  end
+
+  def save
   end
 
 end
