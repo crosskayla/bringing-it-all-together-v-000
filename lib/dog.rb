@@ -55,7 +55,6 @@ class Dog
     SQL
 
     DB[:conn].execute(sql, self.name, self.breed, self.id)
-    #Dog.new_from_db(row)
 
   end
 
