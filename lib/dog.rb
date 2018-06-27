@@ -6,6 +6,7 @@ class Dog
   def initialize(name:, breed: nil, id: nil)
     @name = name
     @breed = breed
+    @id = id
   end
 
   def self.create_table
